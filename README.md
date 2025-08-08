@@ -1,5 +1,6 @@
 # André Pacheco
 
-Check out my portfolio page (here!)[andre-gp.github.io]
+Check out my portfolio page [here!](https://andre-gp.github.io/)
 
-This project was created based on the @codewithsadee (template)[https://github.com/codewithsadee/vcard-personal-portfolio] under the MIT license
+### License
+This project was created based on the @codewithsadee [template](https://github.com/codewithsadee/vcard-personal-portfolio), which is under the MIT license.
