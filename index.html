@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>André Pacheco - Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/andre.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/andre.png" alt="André Pacheco" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="André Pacheco">André Pacheco</h1>
+
+          <p class="title">Game Programmer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:andregoncalvespacheco@hotmail.com"
+                class="contact-link">andregoncalvespacheco@hotmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Celular</p>
+
+              <a href="tel:31994092100" class="contact-link">(31) 99409-2100</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Localização</p>
+
+              <address>Belo Horizonte - MG, Brasil</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/andre-gp" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/andr%C3%A9-pacheco-07a223254/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Projetos</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Sobre mim</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="projetos  active" data-page="projetos">
+
+        <header>
+          <h2 class="h2 article-title">Projetos</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Games</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Tools</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Tools</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="" data-project-id="gatinhos">
+              <a href="#" class="open-popup">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="" alt="" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"></h3>
+                <p class="project-sub-title"></p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="" data-project-id="farmYourFriends">
+              <a href="#" class="open-popup">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="" alt="" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"></h3>
+                <p class="project-sub-title"></p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="" data-project-id="laserHeart">
+              <a href="#" class="open-popup">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="" alt="" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"></h3>
+                <p class="project-sub-title"></p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="" data-project-id="rotten">
+              <a href="#" class="open-popup">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="" alt="" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"></h3>
+                <p class="project-sub-title"></p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="" data-project-id="pointNFlip">
+              <a href="#" class="open-popup">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="" alt="" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"></h3>
+                <p class="project-sub-title"></p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="" data-project-id="cropTap">
+              <a href="#" class="open-popup">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="" alt="" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"></h3>
+                <p class="project-sub-title"></p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="" data-project-id="sceneHop">
+              <a href="#" class="open-popup">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="" alt="" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"></h3>
+                <p class="project-sub-title"></p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="" data-project-id="deTach">
+              <a href="#" class="open-popup">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="" alt="" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"></h3>
+                <p class="project-sub-title"></p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="" data-project-id="configMe">
+              <a href="#" class="open-popup">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="" alt="" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"></h3>
+                <p class="project-sub-title"></p>
+
+              </a>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <div class="popup">
+        <div class="popup-content">
+          <button class="popup-close">×</button>
+          <h1 class="popup-title">Title</h1>
+          <p class="popup-description">Description</p>
+        </div>
+      </div>
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="sobre mim" data-page="sobre mim">
+
+        <header>
+          <h2 class="h2 article-title">Sobre mim</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            <!--
+            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+            I enjoy
+            turning complex problems into simple, beautiful and intuitive designs.
+            -->
+          </p>
+
+          <p>
+            <!--
+            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your
+            message and identity in the most creative way. I created web design for many famous brand companies.
+            -->
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="about-text">
+        <div>
+          <b>André é entusiasmado, criativo e comunicativo.</b> É conhecido como uma pessoa tranquila e fácil
+          de se relacionar. Sua paixão é desenvolver jogos e poder compartilhar esse processo com outros. <br>
+          Busca constantemente atualizar seus conhecimentos, mantendo-se informado sobre novas
+          tecnologias, além de demonstrar eficiência no aprendizado de novas ferramentas. <br><br>
+          Tem <b>experiência em toda pipeline de desenvolvimento de um jogo</b>. Esse conhecimento o auxilia a <b>solucionar
+          problemas de forma eficaz</b>, permitindo-o <b>identificar facilmente em qual etapa pode ter ocorrido
+          um erro</b>, além de facilitar a implementação e otimização de variados tipos de demandas.<br><br>
+          Já trabalhou remotamente em diversos projetos, possuindo experiência no uso de ferramentas de
+          comunicação, colaboração e gestão de projetos, como Trello, GitHub, Discord, Slack, Miro, Google
+          Drive.
+        </div>
+        </section>
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Especialidades</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/logo-unity.png" alt="unity" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Programação Unity</h4>
+
+                <p class="service-item-text">
+                  Desenvolvimento de jogos em Unity, com foco em performance, mecânicas fluidas e integração multiplataforma.
+                </p>
+              </div>
+
+            </li>
+
+            
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile / PC / Consoles</h4>
+
+                <p class="service-item-text">
+                  Criação de jogos otimizados para mobile, desktop e consoles, priorizando usabilidade e desempenho.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/back-end.png" alt="Back-end" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Back-end / Integração de Sistemas</h4>
+
+                <p class="service-item-text">
+                  Implementação de APIs, bancos de dados e serviços em nuvem, além de integração segura entre sistemas e aplicação.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/multiplayer.png" alt="Multiplayer" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Multiplayer</h4>
+
+                <p class="service-item-text">
+                  Desenvolvimento de sistemas multiplayer eficientes (cliente-servidor), com foco em sincronização de redes e baixa latência.
+                </p>
+              </div>
+
+            </li>
+
+            
+
+            
+
+          </ul>
+
+          <h3 class="h3 about-sub-title">Tem experência com:</h3>
+          <section class="about-text about-bullet-points">
+
+          <ul>            
+            <li>Sistema de <b>Multiplayer</b></li>
+            <li>Integração <b>Back-end</b></li>
+            <li>Criação de <b>Jogos Mobile</b></li>        
+            <li>Implementação de SDKs (como <b>Steamworks e Xbox</b>)</li>
+            <li>Programação de <b>Gameplay</b></li>
+            <li>Programação de <b>UI</b> (uGUI e UI Toolkit)</li>
+            <li><b>Otimização</b> de Projetos</li>
+            <li>Ferramentas de <b>Editor</b></li>
+            <li>Sistemas de IA (tomada de decisão)</li>
+          </ul>
+
+          <h3 class="h3 about-sub-title">Idiomas</h3>
+          <section class="about-text about-bullet-points">
+
+          <ul>            
+            <li>Português Nativo</li>
+            <li>Inglês Fluente</li>
+            <li>Espanhol Básico</li>
+          </ul>
+        </section>
+
+
+        </section>
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiência</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Patada! Studio</h4>
+
+              <span>Fev 2025 - o momento</span>
+
+              <p class="timeline-text">
+                <b>Programador de Gameplay, Interface e Sistemas (Unity)</b><br>
+                Trabalhou com artistas e programadores experientes, proporcionando um grande crescimento profissional, aprimorando <b>habilidades técnicas e de colaboração em equipe.</b>                
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Meganeura Games</h4>
+
+              <span>2020 - 2025</span>
+
+              <p class="timeline-text">
+                <b>CEO & Programador Unity</b><br>
+                Fundou a empresa, adquirindo vasta experiência não apenas na <b>criação, publicação e divulgação</b> de um jogo, mas também em trabalho em equipe e gestão de projetos.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">(PUC-MG) Monitoria em "Motores de Jogos Digitais"</h4>
+
+              <span>2019-2020</span>
+
+              <p class="timeline-text">
+                Atuou como mentor, auxiliando diversos alunos em seus projetos de jogos digitais, esclarecendo dúvidas e oferecendo soluções para questões relacionadas a engine e programação.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Formação Acadêmica</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">PUC Minas</h4>
+
+              <span>2018 - 2020</span>
+
+              <p class="timeline-text">
+                Programação de Jogos Digitais
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
+
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
