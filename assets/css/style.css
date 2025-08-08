@@ -531,7 +531,10 @@ main {
 
 .about-text p { margin-bottom: 15px; }
 
-
+.about-text a:link { color: lightskyblue; }
+.about-text a:visited { color: #6d4b8d; }
+.about-text a:hover { color: #ffffff; }
+.about-text a:active { color: #ff4040; text-decoration:none; font-weight:normal; }
 
 /**
  * #service 
@@ -715,7 +718,11 @@ main {
  * skills 
  */
 
-.skills-title { margin-bottom: 20px; }
+.skills-title 
+{ 
+  margin-bottom: 10px; 
+  margin-top: 30px; 
+}
 
 .skills-list { padding: 20px; }
 
